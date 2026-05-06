@@ -1,6 +1,5 @@
 import AuthBackgroundShape from "@/assets/svg/auth-background-shape"
 import { Card } from "@/components/ui/card"
-import { AuthService } from "@/features/auth/auth.service"
 import { useAuthStore } from "@/features/auth/auth.store"
 import { useEffect } from "react"
 import { Outlet, useNavigate } from "react-router"

@@ -14,7 +14,6 @@ const BlogPage = () => {
 
   const {
     data: blogPosts,
-    isError,
     isPending,
   } = useQuery({
     queryKey: ["blog", { page, category, search }],

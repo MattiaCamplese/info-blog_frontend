@@ -99,7 +99,7 @@ const PostEditorForm = ({
   const onSubmit = (_values: PostEditorFormValues) => {
     if (isEdit) {
       const { featuredImage, ...body } = _values;
-      updateMutation.mutate({ id: initialPost?.id, body: { ...body, userId: user!.id } })
+      updateMutation.mutate({ id: postId!, body: { ...body, userId: user!.id } })
       if (featuredImage) {
         updateFeaturedImageMutation.mutate({
           postId: initialPost!.id,
